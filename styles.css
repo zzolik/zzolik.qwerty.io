@@ -1,0 +1,122 @@
+@media screen and (min-width: 500px) {
+	header {
+		background: url(images/bg1.jpg) no-repeat center;
+		width: 100%;
+		padding-bottom: 130px;
+	}
+}
+header #blocks h2 {
+	text-align: center;
+}
+ul {
+	list-style: none;
+}
+
+#menu li {
+	margin: 0 0 0 20px !important;
+	cursor: pointer;
+}
+.icon:hover {
+	background: url(images/hover.png);
+}
+#block2 {
+	background: url(images/bg2.png) center;
+}
+.head li {
+	color: #696964;
+	font-size: 23px;
+	padding: 20px 30px 0 0;
+}
+.head li a {
+	position: relative;
+	color: #696964; /*задаём цвет ссылки*/
+	cursor: pointer;
+	line-height: 1; /*задаём высоту строки*/
+	text-decoration: none !important; /*убираем подчёркивание*/
+}
+.head li a:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #62ada4; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+.head li a:hover {
+	color: #62ada4;
+}
+.head li a:hover:after,
+.head li a:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
+}
+#info {
+	color: #171717;
+	padding-bottom: 65px;
+}
+#info ul li span {
+	color: #00b596;
+	font-size: 26px;
+	font-family: ‘Comic Sans MS’, cursive;
+	margin-right: 30px;
+}
+#info ul li {
+	display: flex;
+	margin: 10px 0;
+}
+button {
+	background-color: #009e82 !important;
+}
+@media screen and (min-width: 1280px) { /*если экран больше 1280 пискелей то...*/
+	#info {
+		margin-left: 200px;
+	}
+	#info ul {
+		margin-left: -40px;
+	}
+	#text {
+		margin-bottom: 30px;
+		padding-top: 100px;
+	}
+}
+@media screen and (max-width: 1000px) { /*если экран меньше 1000 пискелей то...*/
+	#menu, #block2 {
+		display: none;
+	}
+	#text {
+		margin-top: -200px;
+	}
+}
+@media screen and (max-width: 500px) { /*если экран меньше 500 пискелей то...*/
+	body {
+		background: url(images/bgSm.jpg) center !important;
+	}
+}
+@media screen and (min-width: 1000px) { /*если экран  больше 1000 пискелей то...*/
+	.blockSm {
+		display: none;
+	}
+	.fp-section {
+    width: 100% !important;
+    position: absolute !important;
+    left: 0;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+	}
+	.fp-section {
+	    -webkit-transition: all 1000ms ease;
+	    transition: all 1000ms ease;
+	}
+	.fp-section.active {
+	    visibility: visible;
+	    opacity: 1;
+	}
+}
+.menu {
+	padding: 15px;
+	background-color: white;
+	opacity: .7;
+	cursor: pointer;
+}

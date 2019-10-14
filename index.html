@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<title>Главная страница</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="styles.css">
+	<link rel="stylesheet" href="css/jquery.fullpage.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+</head>
+<body>
+<div id="fullpage">
+	<header class="section">
+		<div id="blocks">
+			<h2 id="text">Выберите способ заработка</h2>
+			<div class="row blockSm justify-content-center col-12">
+				<ul>
+				<li id="hide" class="menu" style="display: none;"><img src="images/icon1Sm.png" alt="">  Самостоятельно торговать  <i class="fas fa-chevron-up"></i></li>
+				<li id="show" class="menu"><img src="images/icon1Sm.png" alt="">  Самостоятельно торговать  <i class="fas fa-chevron-down"></i></li><br>
+				<div id="comments" style="display: none;">
+				<div id="info">
+					<p>Если вы ищете пассивный доход и предпочитаете, чтобы деньги для вас зарабатывал тот,<br>
+						кто умеет это делать, тогда попробуйте ЛАММ. ЛАММ - это сервис копирования сделок<br>успешных трейдеров. Доходность ни чем не ограничена!</p><br>
+						<h3>Как это работает</h3>
+					<ul>
+						<li><span>1</span>Вы выбираете управляющего из рейтинга по фильтру Options</li>
+						<li><span>2</span>Подключаете свой счет к счету Управляющего</li>
+						<li><span>3</span>На вашем счете начинается копирование сделок</li>
+						<li><span>4</span>Обратите внимание, что вы не перечисляете свои деньги Управляющему, все ваши<br>средства остаются на Вашем счете.</li>
+						<li><span>5</span>Вы можете подключиться к нескольким Управляющим одновременно.</li>
+						<li><span>6</span>Вы можете отключиться от Управляющих в любой момент.</li>
+					</ul>
+					<button type="button" class="btn btn-success">Продолжить</button>
+				</div>
+				</div>
+					<li class="menu"><img src="images/icon2Sm.png" alt="">  Инвестировать  <i class="fas fa-chevron-down"></i></li><br>
+					<li class="menu"><img src="images/icon3Sm.png" alt="">  Привлекать инвесторов  <i class="fas fa-chevron-down"></i></li><br>
+				</ul>
+			</div>
+			<ul class="row justify-content-center" id="menu">
+				<li class="icon" id="moveDown"><img src="images/icon1.png" alt=""></li>
+				<li class="icon"><img src="images/icon4.png" alt=""></li>
+				<li class="icon"><img src="images/icon3.png" alt=""></li>
+			</ul>
+		</div>
+	</header>
+	<section id="block2" class="section">
+		<div>
+			<ul class="row justify-content-around head">
+				<li><a href="#">Торговать</a></li>
+				<li><a href="#">Инвестировать</a></li>
+				<li><a href="#">Привлекать инвесторов</a></li>
+			</ul>
+		</div><hr>
+		<div id="info">
+			<p>Если вы ищете пассивный доход и предпочитаете, чтобы деньги для вас зарабатывал тот,<br>
+			кто умеет это делать, тогда попробуйте ЛАММ. ЛАММ - это сервис копирования сделок<br>успешных трейдеров. Доходность ни чем не ограничена!</p><br>
+				<h3>Как это работает</h3>
+			<ul>
+				<li><span>1</span>Вы выбираете управляющего из рейтинга по фильтру Options</li>
+				<li><span>2</span>Подключаете свой счет к счету Управляющего</li>
+				<li><span>3</span>На вашем счете начинается копирование сделок</li>
+				<li><span>4</span>Обратите внимание, что вы не перечисляете свои деньги Управляющему, все ваши<br>средства остаются на Вашем счете.</li>
+				<li><span>5</span>Вы можете подключиться к нескольким Управляющим одновременно.</li>
+				<li><span>6</span>Вы можете отключиться от Управляющих в любой момент.</li>
+			</ul>
+			<button type="button" class="btn btn-success">Продолжить</button>
+		</div>
+	</section>
+</div>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jquery.fullpage.js"></script>
+<script type="text/javascript" src="js/jquery.fullpage.extensions.min.js"></script>
+<script>
+$("#fullpage").fullpage({
+		responsiveWidth: 768,
+		scrollOverflow: false,
+        resize : false,
+		slidesNavigation: true,
+		fadingEffect: true
+	});
+$(document).on('click', '#moveDown', function(){
+  $.fn.fullpage.moveSectionDown();
+});
+$(document).on('click', '#show', function(){
+	$('#text').css('margin-top', '5px');
+});
+function hideComments () {
+	$('#comments').slideUp(1000, function () {
+		$('#hide').hide();
+		$('#show').show();
+	});
+}
+function showComments () {
+	$('#comments').slideDown(1000, function (){ 
+	$('#hide').show();
+	$('#show').hide();	
+	});
+}
+$(document).ready (function() {
+	$('#hide').bind('click', hideComments);
+	$('#show').bind('click', showComments);
+});
+</script>
+</body>
+</html>
